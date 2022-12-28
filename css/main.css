@@ -1,0 +1,685 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* estilos generales */
+body {
+  background-image: url(../img/fondo11.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'roboto' , sans-serif; }
+
+/* estilos de header */
+header {
+  height: 60%;
+  width: 70%;
+  display: none; }
+
+header {
+  display: block;
+  display: flex;
+  align-items: center; }
+  header div img {
+    width: 40%; }
+  header nav ul li {
+    font-weight: bold; }
+
+header {
+  display: block;
+  display: flex;
+  align-items: center; }
+
+header div img {
+  width: 40%; }
+
+header nav ul li {
+  font-weight: bold; }
+
+@media screen and (min-width: 600px) {
+  header {
+    display: block;
+    display: flex;
+    align-items: center; }
+    header div img {
+      width: 40%; }
+    header nav ul li {
+      font-weight: bold; } }
+
+/* estilos de main */
+main {
+  background-color: #2726277e;
+  width: auto;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main h1 {
+    color: #f3eaea;
+    text-align: center;
+    text-shadow: 2px 2px 2px black; }
+  main h2 {
+    text-align: center;
+    color: #f3eaea;
+    text-shadow: 2px 2px 2px black;
+    display: block; }
+  main p {
+    color: #f3eaea;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  main img {
+    width: 60%;
+    filter: drop-shadow(3px 2px 3px white); }
+
+/* estilos de main contacto */
+.formulario {
+  height: 100%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem; }
+  .formulario .contacto {
+    background-color: #3b3b3b;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 70%;
+    padding: 1rem; }
+  .formulario div {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 6px;
+    width: 80%; }
+  .formulario a {
+    text-decoration: none;
+    display: inline-block;
+    width: 25%;
+    padding: 10px;
+    margin-top: 10px;
+    color: #c73f88c4;
+    border: 1px solid #c73f88c4;
+    border-radius: 4px;
+    transition: all 400ms ease; }
+  .formulario a:hover {
+    background: #c73f88c4;
+    color: #fff; }
+
+/* estilos main tienda online */
+.tienda {
+  display: block;
+  display: flex;
+  align-items: center; }
+  .tienda h1 {
+    text-align: center; }
+  .tienda img {
+    width: 50%;
+    height: auto;
+    margin-top: 0.5rem; }
+  .tienda div {
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff; }
+    .tienda div figure img {
+      width: 100%;
+      height: auto;
+      margin-top: 0; }
+    .tienda div .contenido {
+      background-color: transparent;
+      padding: 5px;
+      text-align: center; }
+      .tienda div .contenido p {
+        text-shadow: none;
+        color: black;
+        line-height: 1.5;
+        font-weight: normal;
+        font-size: 1.8rem; }
+      .tienda div .contenido h3 {
+        margin-bottom: 8px; }
+    .tienda div a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+      margin-top: 10px;
+      color: #c73f88c4;
+      border: 1px solid #c73f88c4;
+      border-radius: 4px;
+      transition: all 400ms ease; }
+    .tienda div a:hover {
+      background: #c73f88c4;
+      color: #fff; }
+
+/* estilos de main talleres */
+.talleres {
+  background-color: #2726277e;
+  width: 95%;
+  height: 100%;
+  margin: 1rem;
+  display: block;
+  display: flex;
+  align-items: center; }
+  .talleres img {
+    width: 50%;
+    height: auto;
+    margin: 1rem; }
+  .talleres div {
+    width: 60%;
+    height: auto;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #3b3b3b;
+    text-align: center;
+    padding: 15px; }
+    .talleres div p {
+      text-shadow: none;
+      color: #fff;
+      line-height: 1.5;
+      font-weight: normal;
+      font-size: 1rem; }
+    .talleres div h3 {
+      color: #fff;
+      margin-bottom: 15px; }
+    .talleres div h4 {
+      color: #fff; }
+  .talleres a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #c73f88c4;
+    border: 1px solid #c73f88c4;
+    border-radius: 4px;
+    transition: all 400ms ease; }
+  .talleres a:hover {
+    background: #c73f88c4;
+    color: #fff; }
+
+/*estilos de main terapias*/
+.terapias {
+  display: block;
+  display: flex;
+  align-items: center; }
+  .terapias figure {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 6px;
+    background-color: #3b3b3b;
+    padding: 10px; }
+  .terapias figure img {
+    filter: none;
+    width: 100%;
+    height: auto; }
+  .terapias a {
+    text-align: center;
+    text-decoration: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    color: #c73f88c4;
+    border: 1px solid #c73f88c4;
+    border-radius: 4px;
+    transition: all 400ms ease; }
+  .terapias a:hover {
+    background: #c73f88c4;
+    color: #fff; }
+  .terapias .carousel {
+    width: 85%;
+    height: auto;
+    margin: 30px; }
+
+/* estilos nuevos de main */
+@media screen and (min-width: 600px) {
+  .home {
+    background-color: #2726277e;
+    height: 100vh;
+    padding: 1rem;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 0.1fr 0.1fr 3fr;
+    grid-template-areas: "h1 img" "h2 img" "p  img";
+    justify-content: center;
+    align-items: center; }
+  .home h1 {
+    grid-area: h1;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 2px black; }
+  .home h2 {
+    grid-area: h2;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 2px black; }
+  .home p {
+    grid-area: p;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 2px 2px 2px black; }
+  .home img {
+    grid-area: img;
+    width: auto;
+    height: 100%;
+    filter: drop-shadow(3px 2px 3px white); }
+  /* estilos de main terapias */
+  .terapias {
+    height: 100%;
+    background-color: #2726277e;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 0.3fr 0,3fr 2fr 2fr 2fr;
+    grid-template-areas: "h1 h1 h1" "h2 h2 h2" "servicios1 servicios2 servicios3" "servicios4 servicios5 servicios6" "carousel carousel carousel ";
+    justify-content: center;
+    align-items: center; }
+    .terapias h1 {
+      grid-area: h1; }
+    .terapias h2 {
+      grid-area: h2; }
+    .terapias .servicios1 {
+      grid-area: servicios1; }
+    .terapias .servicios2 {
+      grid-area: servicios2; }
+    .terapias .servicios3 {
+      grid-area: servicios3; }
+    .terapias .servicios4 {
+      grid-area: servicios4; }
+    .terapias .servicios5 {
+      grid-area: servicios5; }
+    .terapias .servicios6 {
+      grid-area: servicios6; }
+    .terapias .carousel {
+      grid-area: carousel;
+      width: 85%;
+      height: auto;
+      margin: 50px; }
+    .terapias h1, .terapias h2 {
+      text-align: center;
+      text-shadow: 2px 2px 2px #363636; }
+    .terapias figure {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin: 20px;
+      border-radius: 6px;
+      background-color: #3b3b3b;
+      padding: 10px; }
+    .terapias figure img {
+      filter: none;
+      width: 100%;
+      height: auto; }
+    .terapias a {
+      text-align: center;
+      text-decoration: none;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+      margin-top: 20px;
+      color: #c73f88c4;
+      border: 1px solid #c73f88c4;
+      border-radius: 4px;
+      transition: all 400ms ease; }
+    .terapias a:hover {
+      background: #c73f88c4;
+      color: #fff; }
+  .carousel-item h5 {
+    background-color: #2726277e;
+    text-shadow: 2px 2px 2px #5c5b5b; }
+  .carousel-item p {
+    background-color: #2726277e;
+    font-size: 0.7rem;
+    text-shadow: 2px 2px 2px #5c5b5b; }
+  .carousel-item img {
+    display: block;
+    display: flex;
+    margin-right: 20rem; }
+  /* estilos de main talleres */
+  .talleres {
+    background-color: #2726277e;
+    width: 95%;
+    height: 100%;
+    margin: 1rem;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: 0.3fr 0.5fr 0.3fr 1fr 1fr;
+    grid-template-areas: "h1 h1 h1 h1" "gift1 gift2 gift3 gift4" "h2 h2 h2 h2" "contenido1 contenido2 contenido3 contenido4" "contenido5 contenido6 contenido7 talleres";
+    justify-content: center;
+    align-content: center; }
+    .talleres h1 {
+      grid-area: h1;
+      text-align: center; }
+    .talleres .gift1 {
+      grid-area: gift1; }
+    .talleres .gift2 {
+      grid-area: gift2; }
+    .talleres .gift3 {
+      grid-area: gift3; }
+    .talleres .gift4 {
+      grid-area: gift4; }
+    .talleres h2 {
+      grid-area: h2;
+      font-size: 3rem; }
+    .talleres .contenido1 {
+      grid-area: contenido1; }
+    .talleres .contenido2 {
+      grid-area: contenido2; }
+    .talleres .contenido3 {
+      grid-area: contenido3; }
+    .talleres .contenido4 {
+      grid-area: contenido4; }
+    .talleres .contenido5 {
+      grid-area: contenido5; }
+    .talleres .contenido6 {
+      grid-area: contenido6; }
+    .talleres .contenido7 {
+      grid-area: contenido7; }
+    .talleres img {
+      width: 90%;
+      height: auto;
+      margin: 1rem; }
+    .talleres div {
+      width: 85%;
+      height: 90%;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #3b3b3b;
+      text-align: center;
+      padding: 15px; }
+      .talleres div p {
+        text-shadow: none;
+        color: #fff;
+        line-height: 1.5;
+        font-weight: normal;
+        font-size: 1rem; }
+      .talleres div h3 {
+        color: #fff;
+        margin-bottom: 15px; }
+      .talleres div h4 {
+        color: #fff; }
+    .talleres a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+      margin-bottom: 10px;
+      color: #c73f88c4;
+      border: 1px solid #c73f88c4;
+      border-radius: 4px;
+      transition: all 400ms ease; }
+    .talleres a:hover {
+      background: #c73f88c4;
+      color: #fff; }
+  /* estilos de main tiendaonline */
+  .tienda {
+    height: 500%;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat 4, 2fr;
+    grid-template-rows: 0.1fr 0.3fr 0.1fr 1fr 1fr 1fr;
+    grid-template-areas: "h1 h1 h1 h1" "banner banner2 banner3 banner4" "h2 h2 h2 h2" "card1 card2 card3 card4" "card5 card6 card7 card8" "card9 card10 card11 tienda";
+    justify-content: center;
+    align-content: center; }
+    .tienda h1 {
+      grid-area: h1; }
+    .tienda .banner {
+      grid-area: banner;
+      width: 70%;
+      margin: 1rem; }
+    .tienda .banner2 {
+      grid-area: banner2;
+      width: 70%;
+      margin: 1rem; }
+    .tienda .banner3 {
+      grid-area: banner3;
+      width: 70%;
+      margin: 1rem; }
+    .tienda .banner4 {
+      grid-area: banner4;
+      width: 70%;
+      margin: 1rem; }
+    .tienda h2 {
+      grid-area: h2;
+      margin-top: 2rem; }
+    .tienda .card1 {
+      grid-area: card1;
+      width: 80%;
+      height: auto;
+      margin: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; }
+    .tienda .card2 {
+      grid-area: card2;
+      width: 80%;
+      height: auto;
+      margin: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; }
+    .tienda .card3 {
+      grid-area: card3;
+      width: 80%;
+      height: auto;
+      margin: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; }
+    .tienda .card4 {
+      grid-area: card4;
+      width: 80%;
+      height: auto;
+      margin: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; }
+    .tienda .card5 {
+      grid-area: card5;
+      width: 80%;
+      height: auto;
+      margin: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; }
+    .tienda .card6 {
+      grid-area: card6;
+      width: 80%;
+      height: auto;
+      margin: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; }
+    .tienda .card7 {
+      grid-area: card7;
+      width: 80%;
+      height: auto;
+      margin: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; }
+    .tienda .card8 {
+      grid-area: card8;
+      width: 80%;
+      height: auto;
+      margin: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; }
+    .tienda .card9 {
+      grid-area: card9;
+      width: 80%;
+      height: auto;
+      margin: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; }
+    .tienda .card10 {
+      grid-area: card10;
+      width: 80%;
+      height: auto;
+      margin: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; }
+    .tienda .card11 {
+      grid-area: card11;
+      width: 80%;
+      height: auto;
+      margin: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; }
+    .tienda figure img {
+      width: 100%;
+      height: auto; }
+    .tienda .contenido {
+      background-color: transparent;
+      padding: 15px;
+      text-align: center; }
+      .tienda .contenido p {
+        text-shadow: none;
+        color: black;
+        line-height: 1.5;
+        font-weight: normal;
+        font-size: 1.8rem; }
+      .tienda .contenido h3 {
+        margin-bottom: 15px; }
+    .tienda a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+      margin-top: 10px;
+      color: #c73f88c4;
+      border: 1px solid #c73f88c4;
+      border-radius: 4px;
+      transition: all 400ms ease; }
+    .tienda a:hover {
+      background: #c73f88c4;
+      color: #fff; }
+  /* estilos de contacto */
+  .formulario {
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem; }
+    .formulario .contacto {
+      background-color: #3b3b3b;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      width: 70%; }
+    .formulario div {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 6px;
+      width: 80%; }
+    .formulario a {
+      text-decoration: none;
+      display: inline-block;
+      width: 10%;
+      padding: 10px;
+      margin-top: 10px;
+      color: #c73f88c4;
+      border: 1px solid #c73f88c4;
+      border-radius: 4px;
+      transition: all 400ms ease; }
+    .formulario a:hover {
+      background: #c73f88c4;
+      color: #fff; } }
+
+/* estilos de section */
+section {
+  display: none; }
+
+/* estilos de section */
+@media screen and (min-width: 600px) {
+  section {
+    background-image: linear-gradient(to left, #8f868f7e, #08080896);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin: 1rem; }
+  section div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
+    section div img {
+      width: 50%;
+      animation-name: animacion;
+      animation-duration: 5s;
+      animation-iteration-count: infinite; }
+  @keyframes animacion {
+    0% {
+      transform: translateY(0); }
+    50% {
+      transform: translateY(5px); }
+    100% {
+      transform: translateY(0); } }
+      section div img h3 {
+        text-align: center; } }
+
+/* estilos de footer */
+footer {
+  background-color: #2726277e;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+  footer img {
+    height: 2rem; }
+  footer h6 {
+    color: white; }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    footer div h6 {
+      margin-top: 0.5rem; }
+
+/* estilos de footer */
+@media screen and (min-width: 600px) {
+  footer {
+    background-color: #2726277e;
+    display: block;
+    display: flex;
+    margin: 0.5rem 1rem 0.5rem 1rem; }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    footer div h6 {
+      color: white; }
+    footer div img {
+      display: flex;
+      align-items: center;
+      animation-name: animacion-dos;
+      animation-duration: 4s;
+      animation-iteration-count: infinite; }
+  @keyframes animacion-dos {
+    0% {
+      transform: translatex(0); }
+    50% {
+      transform: translatex(5px); }
+    100% {
+      transform: translatex(0); } }
+      footer div img h6 {
+        padding-top: 0.5rem;
+        color: white; } }
+
+/* media queries */

@@ -1,0 +1,45 @@
+/* estilos de section */
+
+section{
+    display: none;
+}
+/* estilos de section */
+@media screen and (min-width:600px){
+section{
+    background-image: linear-gradient(to left, #8f868f7e,#08080896);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin: 1rem;
+}
+section div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items:center;
+    img {
+        width: 50%;
+        animation-name: animacion;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        @keyframes animacion {
+            0%{
+                transform: translateY(0);
+            } 
+            50%{
+                transform: translateY(5px)
+            }
+            100%{
+                transform: translateY(0)
+            }
+        }
+        h3{
+            text-align: center;
+        }
+    }
+    
+    
+}
+}

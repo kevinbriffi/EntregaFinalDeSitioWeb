@@ -1,0 +1,731 @@
+/* estilos de main */
+
+main{
+    background-color: $color-principal;
+    width: auto;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        color: $color-parafos;
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+    }
+    h2{
+        text-align: center; 
+         color: $color-parafos;
+         text-shadow: 2px 2px 2px black;
+         display: block;
+        }
+       p{
+        color: $color-parafos;
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+       img{
+        width: 60%;
+        filter: drop-shadow(3px 2px 3px white);
+       }
+        
+        
+}
+/* estilos de main contacto */
+
+.formulario{ 
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    .contacto{
+        background-color: rgb(59, 59, 59);
+        display:flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 70%;
+        padding: 1rem;
+    }
+    div{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 6px;
+        width: 80%;
+        
+    }
+    a{
+        text-decoration: none;
+        display:inline-block;
+        width: 25%;
+        padding: 10px;
+        margin-top:10px;
+        color: $color-botones;
+        border: 1px solid $color-botones;
+        border-radius: 4px;
+        transition: all 400ms ease;
+       
+    }
+
+    a:hover{
+        background: $color-botones;
+        color: #fff;
+    }
+}    
+
+/* estilos main tienda online */
+
+.tienda{
+    display: block;
+    display: flex;
+    align-items: center;
+    h1{
+        text-align: center;
+    }
+    img{
+        width: 50%;
+        height: auto;
+        margin-top:0.5rem;
+    }
+    div{
+        width: 80%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+        figure img{
+            width: 100%;
+            height: auto;
+            margin-top: 0;
+        }
+        
+     .contenido{
+        background-color: transparent;
+        padding: 5px;
+        text-align: center;
+        p{
+            text-shadow: none;
+            color: black;
+            line-height: 1.5;
+            font-weight: normal;
+            font-size: 1.8rem;   
+        }
+
+        h3{
+            
+            margin-bottom: 8px;
+        }
+        }
+    
+        a{
+            text-decoration: none;
+            display:inline-block;
+            padding: 10px;
+            margin-top:10px;
+            color: $color-botones;
+            border: 1px solid $color-botones;
+            border-radius: 4px;
+            transition: all 400ms ease;
+           
+        }
+    
+        a:hover{
+            background: $color-botones;
+            color: #fff;
+        }
+       
+       
+    }
+}
+/* estilos de main talleres */
+
+.talleres{
+    background-color: $color-principal; 
+    width: 95%;
+    height: 100%;
+    margin: 1rem;
+    display: block;
+    display: flex;
+    align-items: center;
+    img{
+        width: 50%; 
+        height: auto;
+        margin: 1rem; 
+        }
+        div{
+            width: 60%;
+            height: auto;
+            margin: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            background-color: rgb(59, 59, 59); 
+            text-align: center;
+            padding: 15px;
+            p{
+            text-shadow: none;
+            color: #fff;
+            line-height: 1.5;
+            font-weight: normal;
+            font-size: 1rem; 
+          
+            }
+            h3{
+                color: #fff;
+                margin-bottom: 15px;
+            }
+            h4{
+                color: #fff;
+            }
+        }
+        a{
+            text-decoration: none;
+            display:inline-block;
+            padding: 10px;
+            margin-bottom:10px;
+            color: $color-botones;
+            border: 1px solid $color-botones;
+            border-radius: 4px;
+            transition: all 400ms ease;
+           
+        }
+    
+        a:hover{
+            background: $color-botones;
+            color: #fff;
+        }
+}
+
+/*estilos de main terapias*/
+
+.terapias{
+    display:block;
+    display: flex;
+    align-items: center;
+    figure{
+        display: flex;
+        flex-direction: column;
+        overflow:hidden;
+        margin: 20px;
+        border-radius: 6px;
+        background-color: rgb(59, 59, 59); 
+        padding: 10px;
+    }
+    figure img{
+        filter: none;
+        width: 100%;
+        height: auto;
+    }
+    a{
+        text-align: center;
+        text-decoration: none;
+        text-decoration: none;
+        display:inline-block;
+        padding: 10px;
+        margin-top:20px;
+        color: $color-botones;
+        border: 1px solid $color-botones;
+        border-radius: 4px;
+        transition: all 400ms ease;        
+    }
+    a:hover{
+        background: $color-botones;
+        color: #fff;
+    }
+    .carousel{
+        width: 85%;
+        height: auto;
+        margin: 30px;
+    }
+
+}
+
+ /* estilos nuevos de main */
+ 
+ @media screen and (min-width:600px){
+
+ .home{
+    background-color: #2726277e;
+    height: 100vh;
+    padding: 1rem;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns:repeat( 2, 2fr) ;
+    grid-template-rows: 0.1fr 0.1fr 3fr ;
+    grid-template-areas: 
+    "h1 img"
+    "h2 img"
+    "p  img";
+    justify-content: center;
+    align-items: center;
+}
+.home h1{
+    grid-area: h1;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.home h2{
+    grid-area: h2;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.home p{
+    grid-area: p;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    }
+.home img{
+        grid-area: img;
+        width: auto;
+        height: 100%;
+        filter: drop-shadow(3px 2px 3px white);
+    }
+
+/* estilos de main terapias */
+
+.terapias{
+    height: 100%;
+    background-color: #2726277e;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3 ,2fr);
+    grid-template-rows: 0.3fr 0,3fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    "h1 h1 h1"
+    "h2 h2 h2"
+    "servicios1 servicios2 servicios3"
+    "servicios4 servicios5 servicios6"
+    "carousel carousel carousel ";
+    justify-content: center;
+    align-items: center;
+    h1{
+        grid-area: h1;
+    }
+    h2{
+        grid-area: h2;
+    }
+    .servicios1{
+        grid-area: servicios1;
+    }
+    .servicios2{
+        grid-area: servicios2;
+    }
+    .servicios3{
+        grid-area: servicios3;
+    }
+    .servicios4{
+        grid-area: servicios4;
+    }
+    .servicios5{
+        grid-area: servicios5;
+    }
+    .servicios6{
+        grid-area: servicios6;
+    }
+    .carousel{
+        grid-area: carousel;
+        width: 85%;
+        height: auto;
+        margin: 50px;
+    }
+    h1, h2{
+        text-align: center;
+        text-shadow: 2px 2px 2px rgb(54, 54, 54);
+    }
+    figure{
+        display: flex;
+        flex-direction: column;
+        overflow:hidden;
+        margin: 20px;
+        border-radius: 6px;
+        background-color: rgb(59, 59, 59); 
+        padding: 10px;
+    }
+    figure img{
+        filter: none;
+        width: 100%;
+        height: auto;
+    }
+    a{
+        text-align: center;
+        text-decoration: none;
+        text-decoration: none;
+        display:inline-block;
+        padding: 10px;
+        margin-top:20px;
+        color: $color-botones;
+        border: 1px solid $color-botones;
+        border-radius: 4px;
+        transition: all 400ms ease;        
+    }
+    a:hover{
+        background: $color-botones;
+        color: #fff;
+    }
+    
+}
+.carousel-item h5{
+    background-color: #2726277e;
+    text-shadow: 2px 2px 2px rgb(92, 91, 91);
+}
+.carousel-item p{
+    background-color: #2726277e;
+    font-size: 0.7rem;
+    text-shadow: 2px 2px 2px rgb(92, 91, 91);
+    
+}
+
+.carousel-item img{
+    display: block;
+    display: flex;
+    margin-right: 20rem;
+}
+
+
+/* estilos de main talleres */
+
+.talleres{
+    background-color: #2726277e; 
+    width: 95%;
+    height: 100%;
+    margin: 1rem;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr) ;
+    grid-template-rows: 0.3fr 0.5fr 0.3fr 1fr 1fr ;
+    grid-template-areas: 
+    "h1 h1 h1 h1"
+    "gift1 gift2 gift3 gift4"
+    "h2 h2 h2 h2"
+    "contenido1 contenido2 contenido3 contenido4"
+    "contenido5 contenido6 contenido7 talleres";
+    justify-content: center;
+    align-content: center;
+
+    h1{
+        grid-area: h1;
+        text-align: center;}
+    .gift1{
+        grid-area: gift1;}
+    .gift2{
+        grid-area: gift2;}
+    .gift3{
+         grid-area: gift3;}
+    .gift4{
+        grid-area: gift4;}
+    h2{
+        grid-area: h2;
+        font-size: 3rem;
+    }
+    .contenido1{
+        grid-area: contenido1;}
+    .contenido2{
+        grid-area: contenido2;}
+    .contenido3{
+        grid-area: contenido3;}
+    .contenido4{
+        grid-area: contenido4;}
+    .contenido5{
+        grid-area: contenido5;}
+    .contenido6{
+        grid-area: contenido6;}
+    .contenido7{
+        grid-area: contenido7;}
+        img{
+            width: 90%; 
+            height: auto;
+            margin: 1rem; 
+            }
+            div{
+                width: 85%;
+                height: 90%;
+                margin: 20px;
+                border-radius: 6px;
+                overflow: hidden;
+                background-color: rgb(59, 59, 59); 
+                text-align: center;
+                padding: 15px;
+                p{
+                text-shadow: none;
+                color: #fff;
+                line-height: 1.5;
+                font-weight: normal;
+                font-size: 1rem; 
+              
+                }
+                h3{
+                    color: #fff;
+                    margin-bottom: 15px;
+                }
+                h4{
+                    color: #fff;
+                }
+            }
+            a{
+                text-decoration: none;
+                display:inline-block;
+                padding: 10px;
+                margin-bottom:10px;
+                color: $color-botones;
+                border: 1px solid $color-botones;
+                border-radius: 4px;
+                transition: all 400ms ease;
+               
+            }
+        
+            a:hover{
+                background: $color-botones;
+                color: #fff;
+            }
+           
+}
+    
+    
+
+
+/* estilos de main tiendaonline */
+   
+.tienda{
+    height: 500%;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat (4 ,2fr);
+    grid-template-rows: 0.1fr 0.3fr 0.1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "h1 h1 h1 h1"
+    "banner banner2 banner3 banner4"
+    "h2 h2 h2 h2"
+    "card1 card2 card3 card4"
+    "card5 card6 card7 card8"
+    "card9 card10 card11 tienda";
+    justify-content: center;
+    align-content: center;
+
+    h1{
+        grid-area: h1;
+    }
+
+    .banner{
+        grid-area: banner;
+        width: 70%; 
+        margin: 1rem; 
+    }
+    .banner2{
+        grid-area: banner2;
+        width: 70%; 
+        margin: 1rem;  
+    }
+    .banner3{
+        grid-area: banner3;
+        width: 70%; 
+        margin: 1rem;  
+    }
+    .banner4{
+        grid-area: banner4;
+        width: 70%; 
+        margin: 1rem;   
+    }
+
+    h2{
+        grid-area: h2;
+        margin-top: 2rem;
+    }
+
+
+    .card1{
+        grid-area: card1;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+        
+    }
+    
+    
+    .card2{
+        grid-area: card2;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .card3{
+        grid-area: card3;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .card4{
+        grid-area: card4;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .card5{
+        grid-area: card5;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .card6{
+        grid-area: card6;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .card7{
+        grid-area: card7;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .card8{
+        grid-area: card8;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .card9{
+        grid-area: card9;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .card10{
+        grid-area: card10;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .card11{
+        grid-area: card11;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    
+
+    figure img{
+        width: 100%;
+        height: auto;
+    }
+    
+ .contenido{
+    background-color: transparent;
+    padding: 15px;
+    text-align: center;
+    p{
+        text-shadow: none;
+        color: black;
+        line-height: 1.5;
+        font-weight: normal;
+        font-size: 1.8rem;   
+    }
+    h3{
+        
+        margin-bottom: 15px;
+    }
+    }
+
+    a{
+        text-decoration: none;
+        display:inline-block;
+        padding: 10px;
+        margin-top:10px;
+        color: $color-botones;
+        border: 1px solid $color-botones;
+        border-radius: 4px;
+        transition: all 400ms ease;
+       
+    }
+
+    a:hover{
+        background: $color-botones;
+        color: #fff;
+    }
+   
+  
+
+
+}
+
+/* estilos de contacto */
+
+.formulario{ 
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    .contacto{
+        background-color: rgb(59, 59, 59);
+        display:flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 70%;
+    }
+    div{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 6px;
+        width: 80%;
+    }
+    a{
+        text-decoration: none;
+        display:inline-block;
+        width: 10%;
+        padding: 10px;
+        margin-top:10px;
+        color: $color-botones;
+        border: 1px solid $color-botones;
+        border-radius: 4px;
+        transition: all 400ms ease;
+       
+    }
+
+    a:hover{
+        background: $color-botones;
+        color: #fff;
+    }
+    
+   
+    
+}
+
+}
